@@ -25,6 +25,10 @@ import fs2.io.file.Path
 
 import scala.concurrent.duration._
 import scala.util.control.NonFatal
+
+/** GoogleEnvironmentDetection implements an algorithm to detect whether the code is running on
+  * Compute Environment (GCE) or equivalent runtime.
+  */
 trait GoogleEnvironmentDetection[F[_]] {
 
   /** Implements an algorithm to detect whether the code is running on Google Compute

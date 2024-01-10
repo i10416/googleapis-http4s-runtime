@@ -27,6 +27,8 @@ import org.http4s.circe.jsonOf
 
 import scala.concurrent.duration._
 
+/** AccessToken represents a secret value with expiration.
+  */
 sealed abstract class AccessToken private {
   def token: String
   def expiresAt: FiniteDuration

@@ -21,6 +21,9 @@ import cats.effect.Temporal
 import cats.syntax.all._
 import org.http4s.googleapis.runtime.ComputeMetadata
 
+/** ComputeEngineCredentials is credentials that associated with a service account attached to
+  * an instance of Google Compute Engine and its family(e.g. Cloud Run and Cloud Functions).
+  */
 object ComputeEngineCredentials {
   def apply[F[_]](met: ComputeMetadata[F])(implicit
       F: Temporal[F],
