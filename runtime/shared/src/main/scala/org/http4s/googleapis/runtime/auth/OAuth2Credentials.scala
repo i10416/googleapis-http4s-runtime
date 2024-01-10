@@ -26,6 +26,8 @@ import org.http4s.googleapis.runtime.auth.CredentialsFile.User
 import fs2.io.file.Files
 import client.Client
 
+/** Oauth2Credentials abstracts various OAuth2 implementation.
+  */
 object Oauth2Credentials {
   val DEFAULT_SCOPES = Seq("https://www.googleapis.com/auth/cloud-platform")
 

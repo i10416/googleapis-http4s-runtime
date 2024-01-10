@@ -37,7 +37,8 @@ import org.http4s.googleapis.runtime.ComputeMetadata
   */
 object ApplicationDefaultCredentials {
 
-  /** create application default credentials
+  /** create application default credentials for a user, compute engine family and impersonated
+    * principal.
     * @see
     *   https://google.aip.dev/auth/4110#expected-behavior
     */

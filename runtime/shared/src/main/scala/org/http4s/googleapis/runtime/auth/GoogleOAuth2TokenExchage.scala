@@ -25,6 +25,9 @@ import org.http4s.circe.jsonEncoderOf
 import googleapis.runtime.auth.CredentialsFile.ExternalAccount
 import client.Client
 import headers.`Content-Type`
+
+/** googleOAuth2TokenExchange enables to fetch Google access token from external credentials.
+  */
 trait GoogleOAuth2TokenExchange[F[_]] {
 
   /** Exchanges the external credential for a Google Cloud access token.

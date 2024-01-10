@@ -32,6 +32,9 @@ import circe.jsonOf
 import client.Client
 import auth.AccessToken
 import syntax.all._
+
+/** ComputeMetadata enables to access Google Compute Engine and equivalent environment metadata.
+  */
 trait ComputeMetadata[F[_]] {
 
   /** @return

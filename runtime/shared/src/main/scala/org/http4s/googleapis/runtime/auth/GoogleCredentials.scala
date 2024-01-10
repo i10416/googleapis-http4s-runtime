@@ -16,6 +16,9 @@
 
 package org.http4s.googleapis.runtime.auth
 
+/** Generic interface for Google credentials to obtain access token, which is attached to
+  * headers of requests to GCP services.
+  */
 trait GoogleCredentials[F[_]] {
 
   /** obtain quota project id if any.

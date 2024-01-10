@@ -20,6 +20,9 @@ import cats.effect.Temporal
 import client.Client
 import syntax.all._
 
+/** GoogleOAuth2RefreshToken implements oauth2 refresh token authentication flow for Google
+  * services.
+  */
 private[auth] trait GoogleOAuth2RefreshToken[F[_]] {
 
   /** calls Google authorization backend with the refresh token, client ID and client secret in
