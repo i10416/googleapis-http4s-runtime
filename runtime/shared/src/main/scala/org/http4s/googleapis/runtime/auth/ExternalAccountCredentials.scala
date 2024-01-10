@@ -20,8 +20,8 @@ import cats.effect.Temporal
 import cats.syntax.all._
 import fs2.io.IOException
 import fs2.io.file.Files
-import org.http4s.googleapis.runtime.auth.CredentialsFile.ExternalAccount.ExternalCredentialSource
 
+import CredentialsFile.ExternalAccount.ExternalCredentialSource
 import client.Client
 
 /** External account credentials(A.K.A Workload Identity Federation) implementation to access
